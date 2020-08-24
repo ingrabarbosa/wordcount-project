@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count</title>
+</head>
+<body>
+	<h1>There are {%for word, counttotal in sortedwords%} {{word}} - {{counttotal}}{%endfor%}words in your text.</h1>
+	<h1>Your text:</h1>
+	{{fulltext}}
+	<a href="{% url 'home'%}" name="home">Start Again</a>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+<body>
+<h1>Welcome To The Word Count!</h1>
+
+<form action="{% url 'count' %}">
+	<textarea cols="40" rows="5" name="fulltext"></textarea>
+	<br>
+	<input type="submit" value="Count" name="count">
+</form>
+
+
+</body>
+</html>
